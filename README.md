@@ -1,15 +1,51 @@
-# algorand_json
+<p align="center"> 
+<img src="https://miro.medium.com/max/700/1*BFpFCJepifaREIg7qLSLag.jpeg">
+</p>
 
-A new Flutter project.
+# algorand-json
+[![pub.dev][pub-dev-shield]][pub-dev-url]
+[![Effective Dart][effective-dart-shield]][effective-dart-url]
+[![Stars][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-## Getting Started
+Algorand is a public blockchain and protocol that aims to deliver decentralization, scale and security for all participants.
+Their PURE PROOF OF STAKE™ consensus mechanism ensures full participation, protection, and speed within a truly decentralized network. With blocks finalized in seconds, Algorand’s transaction throughput is on par with large payment and financial networks. And Algorand is the first blockchain to provide immediate transaction finality. No forking. No uncertainty.
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## Introduction
+Algorand-dart is a community SDK with an elegant approach to connect your Dart & Flutter applications to the Algorand blockchain, send transactions, create assets and query the indexer with just a few lines of code.
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Once installed, you can simply connect your application to the blockchain and start sending payments
 
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Contributing & Pull Requests
+Feel free to send pull requests.
+
+Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
+
+## Credits
+
+- [Tomas Verhelst](https://github.com/rootsoft)
+- [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[pub-dev-shield]: https://img.shields.io/pub/v/algorand_json?style=for-the-badge
+[pub-dev-url]: https://pub.dev/packages/algorand_json
+[effective-dart-shield]: https://img.shields.io/badge/style-effective_dart-40c4ff.svg?style=for-the-badge
+[effective-dart-url]: https://github.com/tenhobi/effective_dart
+[stars-shield]: https://img.shields.io/github/stars/rootsoft/algorand-json.svg?style=for-the-badge&logo=github&colorB=deeppink&label=stars
+[stars-url]: https://packagist.org/packages/rootsoft/algorand-json
+[issues-shield]: https://img.shields.io/github/issues/rootsoft/algorand-json.svg?style=for-the-badge
+[issues-url]: https://github.com/rootsoft/algorand-json/issues
+[license-shield]: https://img.shields.io/github/license/rootsoft/algorand-json.svg?style=for-the-badge
+[license-url]: https://github.com/RootSoft/algorand-json/blob/master/LICENSE

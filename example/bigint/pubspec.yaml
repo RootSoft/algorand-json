@@ -1,0 +1,20 @@
+name: algorand_json_example
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+dependencies:
+  algorand_dart:
+    git:
+      url: https://github.com/RootSoft/algorand-dart.git
+      ref: feature/block
+
+  algorand_json:
+    git:
+      url: https://github.com/RootSoft/algorand-json.git
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
