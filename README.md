@@ -13,11 +13,18 @@ Algorand is a public blockchain and protocol that aims to deliver decentralizati
 Their PURE PROOF OF STAKE™ consensus mechanism ensures full participation, protection, and speed within a truly decentralized network. With blocks finalized in seconds, Algorand’s transaction throughput is on par with large payment and financial networks. And Algorand is the first blockchain to provide immediate transaction finality. No forking. No uncertainty.
 
 ## Introduction
-Algorand-dart is a community SDK with an elegant approach to connect your Dart & Flutter applications to the Algorand blockchain, send transactions, create assets and query the indexer with just a few lines of code.
+Algorand-JSON is a collection of JSON related operations for the Algorand blockchain.
 
-Once installed, you can simply connect your application to the blockchain and start sending payments
-
-
+```dart
+final algorand = Algorand(
+  options: AlgorandOptions(
+    mainnet: true,
+    transformer: BigIntJsonTransformer(
+      keys: ['uint'],
+    ),
+  ),
+);
+```
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
