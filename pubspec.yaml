@@ -1,0 +1,22 @@
+name: algorand_json
+description: A collection of JSON related operations for the Algorand blockchain
+version: 0.0.1
+homepage: https://www.algorand.com
+repository: https://github.com/RootSoft/algorand-json
+issue_tracker: https://github.com/RootSoft/algorand-json/issues
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  # HTTP & REST
+  dio: ^4.0.6
+
+  # JSON
+  jsontool: ^1.1.2
+
+dev_dependencies:
+  # Testing framework
+  test: ^1.21.3
+
+  flutter_lints: ^2.0.0
