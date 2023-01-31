@@ -21,15 +21,26 @@ class BigIntJsonTransformer extends DefaultTransformer {
   }) {
     return BigIntJsonTransformer._(
       jsonDecodeCallback: (responseBody) {
-        Object? value;
-        final reader = BigIntJsonReader(keys ?? [], (result) {
-          value = result;
-        });
-
-        reader.processValue(JsonReader.fromString(responseBody));
-
-        return value;
+        return decode(
+          responseBody,
+          keys: keys,
+        );
       },
     );
+  }
+
+  /// Parses the string and returns the resulting Json object.
+  static dynamic decode(
+    String source, {
+    List<String>? keys,
+  }) {
+    Object? value;
+    final reader = BigIntJsonReader(keys ?? [], (result) {
+      value = result;
+    });
+
+    reader.processValue(JsonReader.fromString(source));
+
+    return value;
   }
 }
