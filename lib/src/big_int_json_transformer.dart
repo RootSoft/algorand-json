@@ -1,4 +1,5 @@
 import 'package:algorand_json/src/big_int_json_reader.dart';
+import 'package:algorand_json/src/big_int_json_writer.dart';
 import 'package:dio/dio.dart';
 import 'package:jsontool/jsontool.dart';
 
@@ -42,5 +43,19 @@ class BigIntJsonTransformer extends DefaultTransformer {
     reader.processValue(JsonReader.fromString(source));
 
     return value;
+  }
+
+  /// Converts [object] to a JSON string.
+  static dynamic encode(
+    Object? value, {
+    StringSink? sink,
+    String? indent,
+  }) {
+    var buffer = sink ?? StringBuffer();
+    final serializer = BigIntJsonWriter(buffer, indent);
+
+    serializer.processValue(JsonReader.fromObject(value));
+
+    return buffer.toString();
   }
 }
